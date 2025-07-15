@@ -5,10 +5,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infinity Bookstore</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Hello World...</h1>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Infinity Books</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#featured">Featured</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Discover Your Next Favorite Book</h2>
+            <p>Thousands of books in one place. Shop with ease.</p>
+            <a href="#featured" class="btn">Browse Books</a>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2>Book Categories</h2>
+            <div class="category-grid">
+                <div class="cat-box">Fiction</div>
+                <div class="cat-box">Non-Fiction</div>
+                <div class="cat-box">Children</div>
+                <div class="cat-box">Academic</div>
+                <div class="cat-box">Self-Help</div>
+                <div class="cat-box">Comics</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Books -->
+    <section id="featured" class="featured">
+        <div class="container">
+            <h2>Featured Books</h2>
+            <div class="book-grid">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://picsum.photos/200/300?random=1" alt="Book Cover" />
+                    </div>
+
+                    <h3>Book Title One</h3>
+                    <p>Author Name</p>
+                </div>
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://picsum.photos/200/300?random=2" alt="Book Cover" />
+                    </div>
+
+                    <h3>Book Title Two</h3>
+                    <p>Author Name</p>
+                </div>
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://picsum.photos/200/300?random=3" alt="Book Cover" />
+                    </div>
+
+                    <h3>Book Title Three</h3>
+                    <p>Author Name</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2>What Our Readers Say</h2>
+            <div class="review-grid">
+                <div class="review-card">"Amazing collection!" – Asha</div>
+                <div class="review-card">"Fast delivery and great support." – Rifat</div>
+                <div class="review-card">"Love the mint design!" – Sumi</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Infinity Bookstore. All rights reserved by Ahsan Habib.</p>
+        </div>
+    </footer>
+
 </body>
 
 </html>
