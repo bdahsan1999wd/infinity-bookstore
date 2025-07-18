@@ -201,3 +201,107 @@ nav.navbar {
   height: 100%;
   border-radius: 4px;
 }
+
+/* === Why Choose Us Section === */
+.why-choose-us {
+  background-color: #e7fff2;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.why-choose-us .section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.reasons-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.reason-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reason-card h3 {
+  font-size: 1.2rem;
+  color: #2c786c;
+  margin-bottom: 10px;
+}
+
+.reason-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.reason-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* === Animations === */
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 1s ease forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 1.5s ease forwards;
+}
+
+.animate-slide-left {
+  animation: slide-left 1s ease forwards;
+}
+
+.animate-slide-right {
+  animation: slide-right 1s ease forwards;
+}
