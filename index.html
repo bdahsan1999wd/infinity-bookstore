@@ -36,7 +36,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero animate">
         <div class="container">
             <h2>Discover Your Next Favorite Book</h2>
             <p>Thousands of books in one place. Shop with ease.</p>
@@ -45,7 +45,7 @@
     </section>
 
     <!-- Categories Section -->
-    <section id="categories" class="categories">
+    <section id="categories" class="categories animate">
         <div class="container">
             <h2>Book Categories</h2>
             <div class="category-grid">
@@ -60,7 +60,7 @@
     </section>
 
     <!-- Featured Books -->
-    <section id="featured" class="featured">
+    <section id="featured" class="featured animate">
         <div class="container">
             <h2>Featured Books</h2>
             <div class="book-grid">
@@ -93,7 +93,7 @@
     </section>
 
     <!-- Reviews Section -->
-    <section id="reviews" class="reviews">
+    <section id="reviews" class="reviews animate">
         <div class="container">
             <h2>What Our Readers Say</h2>
             <div class="review-grid">
@@ -105,7 +105,7 @@
     </section>
 
     <!-- Why Choose Us Section -->
-    <section class="why-choose-us">
+    <section class="why-choose-us animate">
         <div class="container">
             <h2 class="section-title animate-fade-up">Why Choose Infinity Bookstore?</h2>
             <div class="reasons-grid">
@@ -126,7 +126,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact animate">
         <div class="container">
             <h2>Contact Us</h2>
             <form>
@@ -139,7 +139,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer animate">
         <div class="container">
             <p>&copy; <span id="year-range"></span> Infinity Bookstore. All rights reserved by Ahsan Habib.</p>
         </div>
@@ -168,10 +168,25 @@
         // -----Update the year range into the footer span with ID "year-range"-----
         document.getElementById("year-range").textContent = yearRange;
 
-        // -----Update the second span for mobile view-----
-        document.getElementById("mobile-year-range").textContent = yearRange;
-
     </script>
+
+    <!-- Script to trigger animations on scroll -->
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.animate').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
 
 </body>
 
